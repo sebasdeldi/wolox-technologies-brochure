@@ -1,0 +1,45 @@
+.tech-card {
+  background-color: $green;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px 20px 45px 20px;
+  margin: 40px;
+  position: relative;
+
+  .tech-image {
+    width: $tech-logo-size;
+    max-width: 100%;
+    height: $tech-logo-size;
+    max-height: 100%;
+  }
+
+  .tech-name{
+    margin-bottom: 10px;
+    font-size: $text-medium;
+  }
+
+  .tech-release,
+  .tech-desct,
+  .tech-image {
+    margin-bottom: 15px;
+    font-size: $text-small;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    border: 2px solid $green;
+    border-radius: 7px;
+  }
+}
+
