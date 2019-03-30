@@ -1,0 +1,9 @@
+.front-end-container {
+  margin: 50px;
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+}
